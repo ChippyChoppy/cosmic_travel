@@ -21,6 +21,17 @@ class ScientistsController < ApplicationController
         end
     end
 
+    def edit
+        @scientist = Scientist.find(params[:id])
+    end
+
+    def update
+        @scientist = Scientist.find(params[:id])
+        @scientist.update(scientist_params)
+
+        redirect_to scientist_path(@scientist)
+    end
+
     def destroy
         @scientist = Scientist.find(params[:id])
         if @scientist.valid?

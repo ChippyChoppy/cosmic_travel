@@ -1,0 +1,18 @@
+<h1>That's one small step for man</h1>
+
+<%= form_for @mission do |f| %>
+  <% if flash[:mission_errors] %>
+        <% flash[:mission_errors].each do |error| %>
+            <%= error %>
+        <% end %>
+    <% end %>
+
+    <p><%= f.label "Mission" %>
+    <%= f.text_field :name %>
+    <p><%= f.label :scientist_id %>
+    <%= f.collection_select :scientist_id, @scientists, :id, :name %></p>
+    <p><%= f.label :planet_id %>
+    <%= f.collection_select :planet_id, @planets, :id, :name %></p>
+
+    <p><%= f.submit "And one giant leap" %>
+<% end %>

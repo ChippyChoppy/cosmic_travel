@@ -24,12 +24,12 @@ It is the year 2100 and you run an interplanetary space travel agency.  You are 
         - Scientists' names should be unique -->
     <!-- - If the user makes a mistake on the form, an error should display to the user -->
 
-    - A user should be able to edit the details of a scientist
+    <!-- - A user should be able to edit the details of a scientist -->
 
     <!-- - A user should be able to delete a scientist -->
 
-    - A user should be able to create a new mission by choosing a scientist and a planet from dropdown menus.
+    <!-- - A user should be able to create a new mission by choosing a scientist and a planet from dropdown menus.
         - A mission must have a unique name, a scientist, and a planet.
         - After the mission is created, the user should be redirect to the scientist's detail page
-        - Check that this is working correctly by verifying the new planet appears on the scientist's detail page
+        - Check that this is working correctly by verifying the new planet appears on the scientist's detail page -->
         

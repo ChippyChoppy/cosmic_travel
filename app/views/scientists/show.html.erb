@@ -9,6 +9,7 @@
 <% end %>
 </ul>
 
-<%= link_to "change your deets", edit_scientist_path(scientist.id) %>
+<p><%= link_to "Update", edit_scientist_path %></p>
+<p><%= link_to "Launch a new mission", new_mission_path %></p>
 
-<%= link_to "In a vacuum no one can hear you scream", scientist_path, :confirm => "Do you really want to open the airlock and release this scientist?", method: :delete %>
+<p>In a vacuum no one can hear you scream <br><%= link_to "Delete Scientist", scientist_path, method: :delete %></p>
