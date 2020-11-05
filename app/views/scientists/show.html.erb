@@ -1,0 +1,14 @@
+<h1><%= @scientist.name %></h1>
+<h3><%= @scientist.field_of_study %></h3>
+
+<h3>Mission Control</h3>
+
+<ul>
+<% @scientist.missions.each do |mission| %>
+    <li><%= link_to mission.name, mission_path(mission.id)%> research mission to the planet <%= mission.planet.name %></li>
+<% end %>
+</ul>
+
+<%= link_to "change your deets", edit_scientist_path(scientist.id) %>
+
+<%= link_to "In a vacuum no one can hear you scream", scientist_path, :confirm => "Do you really want to open the airlock and release this scientist?", method: :delete %>

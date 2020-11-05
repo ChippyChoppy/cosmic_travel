@@ -1,0 +1,5 @@
+<h1><%= @mission.name %></h1>
+
+<p><%= @mission.name %> was a heroic expedition to the dangerous planet <%= @mission.planet.name %> by the incredible scientist, <%= @mission.scientist.name %>. </p>
+
+<%= link_to "back", scientist_path(@mission.scientist.id) %>

@@ -1,0 +1,9 @@
+<h1>Intergalactic Space Scientists!</h1>
+<h3> "They're Awesome!"</h3>
+<ul>
+<% @scientists.each do |scientist| %>
+    <li><%= link_to scientist.name, scientist_path(scientist.id) %></li>
+<% end %>
+</ul>
+
+<%= link_to "Join us at Mission Control", new_scientist_path%>
